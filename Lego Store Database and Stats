@@ -1,0 +1,21 @@
+CREATE TABLE legos (id INTEGER PRIMARY KEY, name TEXT, theme TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+
+INSERT INTO legos VALUES(1, "Airplane", "City", 14, 5, 1);
+INSERT INTO legos VALUES(2, "X-wing", "Star Wars", 16, 2, 5);
+INSERT INTO legos VALUES(3, "Boat", "Water", 24, 10, 1);
+INSERT INTO legos VALUES(4, "Townhouse", "City", 54, 5, 1);
+INSERT INTO legos VALUES(5, "Speeder", "Star Wars", 16, 2, 5);
+INSERT INTO legos VALUES(6, "B Wing", "Star Wars", 24, 6, 1);
+INSERT INTO legos VALUES(7, "Tie Fighter", "Star Wars", 14, 7, 1);
+INSERT INTO legos VALUES(8, "Millenium Falcon", "Star Wars", 56, 2, 5);
+INSERT INTO legos VALUES(9, "Barge", "Water", 29, 1, 1);
+INSERT INTO legos VALUES(10, "Town Car", "City", 10, 5, 1);
+INSERT INTO legos VALUES(11, "Police Car", "City", 6, 1, 5);
+INSERT INTO legos VALUES(12, "Fire Truck", "City", 12, 1, 1);
+INSERT INTO legos VALUES(13, "Hospital", "City", 32, 4, 1);
+INSERT INTO legos VALUES(14, "Razor Crest", "Star Wars", 27, 2, 5);
+INSERT INTO legos VALUES(15, "Small Boat", "Water", 9, 2, 1);
+
+SELECT * FROM legos;
+SELECT name FROM legos ORDER BY price;
+SELECT * FROM legos  ORDER BY price > 12;
